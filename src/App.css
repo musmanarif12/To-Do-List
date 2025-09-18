@@ -1,0 +1,131 @@
+body {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app {
+  background: #ffffffdd;
+  width: 360px;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  backdrop-filter: blur(6px);
+}
+
+.app h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+.add-form {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.add-form input {
+  padding: 10px 12px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.add-form input:focus {
+  border-color: #6c63ff;
+}
+
+.add-form button {
+  padding: 10px 16px;
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-form button:hover {
+  background: #5a52e0;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list li {
+  background: #f9f9fb;
+  margin: 10px 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.task-list li.done .task-text {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.task-text {
+  flex: 1;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.edit-input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+}
+
+.edit-buttons {
+  display: flex;
+  gap: 6px;
+  margin-left: 10px;
+}
+
+.edit-buttons button {
+  padding: 4px 10px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-buttons .edit {
+  background: #3498db;
+}
+.edit-buttons .save {
+  background: #2ecc71;
+}
+.edit-buttons .cancel {
+  background: #999;
+}
+.edit-buttons .delete {
+  background: #e74c3c;
+}
+
+.edit-buttons button:hover {
+  opacity: 0.85;
+}
